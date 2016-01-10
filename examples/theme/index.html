@@ -93,11 +93,67 @@
         <div class="text" style="border: 1px solid red; height: 50vh;">
           <h1 style="text-align: center; line-height: 90vh;"> Nothing. </h1>
         </div>
+        <div class="text" style="border: 1px solid red; height: 50vh;">
+          <h2 style="text-align: center; border: 1px solid red; width: 30%; margin: 0px auto;"><a class="scroll" id="button" href="#section-4">Still Want To Know More About Me?</a></h2>
+        </div>
       </div>
 
       <div id="section-4">
+        <div class="text" style="border: 1px solid red; height: 50vh; float: left; width: 50%;">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div id="things" style="border: 1px solid blue; width: 50%; margin-left: 25%;">
+                <h1 style="text-align: center;"> Things I Can Do </h1>
+                <div class="col-sm-4">
+                    <div class="list-group" style="width: 300%; margin-left: 27%;">
+                        <span id="1" class="list-group-item" onClick="return show('element1', 1);" style="color: #000000;"> HTML and CSS (with a little JavaScript)</span>
+                        <span id="2" class="list-group-item" onClick="return show('element2', 2);" style="color: #000000;"> Python </span>
+                        <span id="3" class="list-group-item" onClick="return show('element3', 3);" style="color: #000000;"> C </span>
+                        <span id="4" class="list-group-item" onClick="return show('element4', 4);" style="color: #000000;"> Java </span>
+                        <span id="5" class="list-group-item" onClick="return show('element5', 5);" style="color: #000000;"> Ruby </span>
+                    </div>
+                </div><!-- /.col-sm-4 -->
+            </div>
+        </div>
 
+        <div class="text" style="border: 1px solid red; height: 50vh; width: 50%; float: right;">
+            <div id="element1" class="element" style="display:none; line-height: 50vh;">
+                <p>HTML and CSS</p>
+            </div>
+            <div id="element2" class="element" style="display:none; line-height: 50vh;">
+                <p>Python</p>
+            </div>
+            <div id="element3" class="element" style="display:none; line-height: 50vh;">
+                <p>C</p>
+            </div>
+            <div id="element4" class="element" style="display:none; line-height: 50vh;">
+                <p>Java</p>
+            </div>
+            <div id="element5" class="element" style="display:none; line-height: 50vh;">
+                <p>Ruby</p>
+            </div>
+        </div>
       </div>
+
+        <script>
+            function show(elementID, elementNum) {
+    var ele = document.getElementById(elementID);
+    var group = document.getElementById(elementNum);
+    if (!ele) {
+        alert("no such element");
+        return;
+    }
+    var pages = document.getElementsByClassName('element');
+    for(var i = 0; i < pages.length; i++) {
+        pages[i].style.display = 'none';
+        var num = (i+1).toString();
+        document.getElementById(num).className = document.getElementById(num).className.replace( /(?:^|\s)active(?!\S)/g , '' );
+    }
+    ele.style.display = 'block';
+    group.className += ' active';
+}
+        </script>
 
       <div id="foot" style="border: 1px solid red;">
         <div class="text" >
