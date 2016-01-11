@@ -52,15 +52,30 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a class="scroll" href="#section-1">Section 1</a></li>
-            <li><a class="scroll" href="#section-2">Section 2</a></li>
-            <li><a class="scroll" href="#section-3">Section 3</a></li>
-            <li><a class="scroll" href="#section-4">Section 4</a></li>
+            <li id="nav1" class="nav active" onClick="return changeActive('nav1')"><a class="scroll" href="#section-1">Section 1</a></li>
+            <li id="nav2" class="nav" onClick="return changeActive('nav2')"><a class="scroll" href="#section-2">Section 2</a></li>
+            <li id="nav3" class="nav" onClick="return changeActive('nav3')"><a class="scroll" href="#section-3">Section 3</a></li>
+            <li id="nav4" class="nav" onClick="return changeActive('nav4')"><a class="scroll" href="#section-4">Section 4</a></li>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
+    <script>
+            function changeActive(elementID) {
+    var ele = document.getElementById(elementID);
+    if (!ele) {
+        alert("no such element");
+        return;
+    }
+    document.getElementById("nav1").className = "nav";
+    document.getElementById("nav2").className = "nav";
+    document.getElementById("nav3").className = "nav";
+    document.getElementById("nav4").className = "nav";
+    ele.className = "nav active";
+}
+    </script>
 
       <div id="section-1">
         <div class="text" style="border: 1px solid red; height: 50vh;">
@@ -118,20 +133,60 @@
         </div>
 
         <div class="text" style="border: 1px solid red; height: 50vh; width: 50%; float: right;">
-            <div id="element1" class="element" style="display:none; line-height: 50vh;">
-                <p>HTML and CSS</p>
+            <div id="element1" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a leo enim. Ut vulputate turpis a metus accumsan, a sollicitudin mauris dignissim. Curabitur aliquam eu orci sed congue. Phasellus mauris eros, scelerisque sed ex non, pulvinar aliquet arcu. Suspendisse porta dignissim nibh ut ultrices. Aliquam rutrum orci vel dapibus gravida. Nullam vel dui dictum, rhoncus leo id, tincidunt ante. Vestibulum id est a erat cursus elementum id a nulla. Cras pretium odio sed mi finibus congue. Fusce ante neque, luctus nec turpis viverra, tincidunt tempus elit. Fusce malesuada neque eu nisi luctus, eget maximus felis tincidunt.</p>
+                </div>
             </div>
-            <div id="element2" class="element" style="display:none; line-height: 50vh;">
-                <p>Python</p>
+            <div id="element2" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Etiam convallis leo ac eleifend sollicitudin. Mauris ultrices purus tincidunt, aliquam risus in, suscipit ante. Aliquam ullamcorper mollis nulla vel laoreet. Donec blandit nisi a elementum sagittis. Proin cursus varius scelerisque. Ut tempor quis sem et tristique. Morbi mattis elit id vulputate placerat. Nulla nibh ipsum, varius vel tellus non, sollicitudin pulvinar ex. Morbi ut consectetur ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec in eros commodo, fringilla libero quis, sollicitudin augue. Duis mollis lobortis turpis, in ornare ligula semper vitae. In rhoncus imperdiet orci eget luctus. Suspendisse vitae dui lacinia, pretium dui in, mattis urna. Nulla fringilla lacinia velit ut ultrices. Nulla vitae sollicitudin orci.</p>
+                </div>
             </div>
-            <div id="element3" class="element" style="display:none; line-height: 50vh;">
-                <p>C</p>
+            <div id="element3" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Pellentesque at bibendum dui. Nam ac orci leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut facilisis felis quis est pretium, quis euismod orci vestibulum. Integer ornare volutpat suscipit. Vestibulum ac elit ut mauris consequat cursus. In efficitur sapien euismod orci dignissim volutpat. Suspendisse quam risus, molestie vitae lacinia posuere, mattis a lorem. Phasellus dapibus ullamcorper purus, a finibus sem. Integer luctus quam et dolor suscipit ultrices. Suspendisse potenti. Curabitur et nulla eget urna semper varius. Cras vehicula sodales purus at dictum. Fusce commodo vel nisi vitae tincidunt.</p>
+                </div>
             </div>
-            <div id="element4" class="element" style="display:none; line-height: 50vh;">
-                <p>Java</p>
+            <div id="element4" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Nam ultrices libero at mattis faucibus. Aliquam lacinia blandit convallis. Vestibulum rutrum lectus vel urna pellentesque, nec maximus turpis luctus. Phasellus ultrices mauris ac velit ultrices scelerisque. Suspendisse dignissim nisi non varius bibendum. Proin sagittis in arcu in commodo. Cras sit amet cursus velit. In porta rhoncus nunc, et tristique ex maximus eget. Mauris felis odio, mollis id lobortis at, tempor dictum sapien. Pellentesque sit amet est nec libero consectetur fermentum.</p>
+                </div>
             </div>
-            <div id="element5" class="element" style="display:none; line-height: 50vh;">
-                <p>Ruby</p>
+            <div id="element5" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Suspendisse potenti. Curabitur condimentum sagittis lorem et bibendum. Praesent consectetur orci nibh, sed convallis ipsum commodo in. Etiam odio nulla, maximus quis mi et, tempus bibendum purus. Vestibulum magna odio, mollis sit amet felis eget, cursus rhoncus dolor. Cras pretium dui vitae dolor ullamcorper pellentesque. Fusce pulvinar eros mauris, eget mattis orci consequat a. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vestibulum tellus tincidunt varius malesuada. Cras pharetra nulla vel arcu luctus, condimentum viverra magna imperdiet. Quisque eleifend ut massa ac volutpat. Sed varius eros a nulla lacinia, a pulvinar elit vehicula. Integer eu lectus imperdiet, eleifend nisl ut, sodales ante. Vivamus sollicitudin placerat ante, non lobortis sem cursus tincidunt.</p>
+                </div>
             </div>
         </div>
       </div>
@@ -189,5 +244,14 @@
          $('html,body').animate({scrollTop:dest}, 1000,'swing');
      });
     </script>
+
+    <script src="noframework.waypoints.min.js">
+        $(function () { // When the page has loaded,
+            $('#section-2').waypoint(function () {
+            alert("Waypoint reached.");
+            })
+        });
+    </script>
+
   </body>
 </html>
