@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Cameron Day</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- For the navbar switching to work with Waypoints -->
+    <script src="noframework.waypoints.min.js"></script>
+
+
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand scroll" href="#section-1" onClick="return changeActive('nav1')">Cameron Day</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li id="nav1" class="nav active" onClick="return changeActive('nav1')"><a class="page-scroll scroll" href="#section-1">The Burning Question</a></li>
+            <li id="nav2" class="nav" onClick="return changeActive('nav2')"><a class="page-scroll scroll" href="#section-2">Who Is Cameron Day?</a></li>
+            <li id="nav3" class="nav" onClick="return changeActive('nav3')"><a class="page-scroll scroll" href="#section-3">What Has He Done?</a></li>
+            <li id="nav4" class="nav" onClick="return changeActive('nav4')"><a class="page-scroll scroll" href="#section-4">What Does He Know?</a></li>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    
+
+      <div id="section-1">
+        <div class="text" style="border: 1px solid red; height: 50vh;">
+          <h1 style="line-height: 90vh; text-align: center;"> Who is Cameron Day? </h1>
+        </div>
+        <div class="text" style="border: 1px solid red; height: 50vh;">
+          <h2 style="text-align: center; border: 1px solid red; width: 7%; margin: 0px auto;"><a class="scroll" id="button" href="#section-2" onClick="return changeActive('nav2')"> Find Out</a></h2> 
+        </div>
+      </div>
+
+      <div id="section-2">
+        <div class="picture" style="height: 50vh; border: 1px solid red;">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <img src="img/me.png" style="margin-left: auto; margin-right: auto; display: block;">
+        </div>
+        <div class="text" style="height: 50vh; border: 1px solid red;">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h1 style="text-align: center;"> Cameron Day. Tech Guy Extraordinaire. </h1>
+          <h2 style="text-align: center; border: 1px solid red; width: 25%; margin: 0px auto;"><a class="scroll" id="button" href="#section-3" onClick="return changeActive('nav3')">But What Have You Done?</a></h2>
+        </div>
+      </div>
+
+      <div id="section-3">
+        <div class="text" style="border: 1px solid red; height: 50vh;">
+          <h1 style="text-align: center; line-height: 90vh;"> Nothing. </h1>
+        </div>
+        <div class="text" style="border: 1px solid red; height: 50vh;">
+          <h2 style="text-align: center; border: 1px solid red; width: 30%; margin: 0px auto;"><a class="scroll" id="button" href="#section-4" onClick="return changeActive('nav4')">Still Want To Know More About Me?</a></h2>
+        </div>
+      </div>
+
+      <div id="section-4">
+        <div class="text" style="border: 1px solid red; height: 50vh; float: left; width: 50%;">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div id="things" style="border: 1px solid blue; width: 50%; margin-left: 25%;">
+                <h1 style="text-align: center;"> Things I Can Do </h1>
+                <div class="col-sm-4">
+                    <div class="list-group" style="width: 300%; margin-left: 27%;">
+                        <span id="1" class="list-group-item" onClick="return show('element1', 1);" style="color: #000000;"> HTML and CSS (with a little JavaScript)</span>
+                        <span id="2" class="list-group-item" onClick="return show('element2', 2);" style="color: #000000;"> Python </span>
+                        <span id="3" class="list-group-item" onClick="return show('element3', 3);" style="color: #000000;"> C </span>
+                        <span id="4" class="list-group-item" onClick="return show('element4', 4);" style="color: #000000;"> Java </span>
+                        <span id="5" class="list-group-item" onClick="return show('element5', 5);" style="color: #000000;"> Ruby </span>
+                    </div>
+                </div><!-- /.col-sm-4 -->
+            </div>
+        </div>
+
+        <div class="text" style="border: 1px solid red; height: 50vh; width: 50%; float: right;">
+            <div id="element1" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a leo enim. Ut vulputate turpis a metus accumsan, a sollicitudin mauris dignissim. Curabitur aliquam eu orci sed congue. Phasellus mauris eros, scelerisque sed ex non, pulvinar aliquet arcu. Suspendisse porta dignissim nibh ut ultrices. Aliquam rutrum orci vel dapibus gravida. Nullam vel dui dictum, rhoncus leo id, tincidunt ante. Vestibulum id est a erat cursus elementum id a nulla. Cras pretium odio sed mi finibus congue. Fusce ante neque, luctus nec turpis viverra, tincidunt tempus elit. Fusce malesuada neque eu nisi luctus, eget maximus felis tincidunt.</p>
+                </div>
+            </div>
+            <div id="element2" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Etiam convallis leo ac eleifend sollicitudin. Mauris ultrices purus tincidunt, aliquam risus in, suscipit ante. Aliquam ullamcorper mollis nulla vel laoreet. Donec blandit nisi a elementum sagittis. Proin cursus varius scelerisque. Ut tempor quis sem et tristique. Morbi mattis elit id vulputate placerat. Nulla nibh ipsum, varius vel tellus non, sollicitudin pulvinar ex. Morbi ut consectetur ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec in eros commodo, fringilla libero quis, sollicitudin augue. Duis mollis lobortis turpis, in ornare ligula semper vitae. In rhoncus imperdiet orci eget luctus. Suspendisse vitae dui lacinia, pretium dui in, mattis urna. Nulla fringilla lacinia velit ut ultrices. Nulla vitae sollicitudin orci.</p>
+                </div>
+            </div>
+            <div id="element3" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Pellentesque at bibendum dui. Nam ac orci leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut facilisis felis quis est pretium, quis euismod orci vestibulum. Integer ornare volutpat suscipit. Vestibulum ac elit ut mauris consequat cursus. In efficitur sapien euismod orci dignissim volutpat. Suspendisse quam risus, molestie vitae lacinia posuere, mattis a lorem. Phasellus dapibus ullamcorper purus, a finibus sem. Integer luctus quam et dolor suscipit ultrices. Suspendisse potenti. Curabitur et nulla eget urna semper varius. Cras vehicula sodales purus at dictum. Fusce commodo vel nisi vitae tincidunt.</p>
+                </div>
+            </div>
+            <div id="element4" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Nam ultrices libero at mattis faucibus. Aliquam lacinia blandit convallis. Vestibulum rutrum lectus vel urna pellentesque, nec maximus turpis luctus. Phasellus ultrices mauris ac velit ultrices scelerisque. Suspendisse dignissim nisi non varius bibendum. Proin sagittis in arcu in commodo. Cras sit amet cursus velit. In porta rhoncus nunc, et tristique ex maximus eget. Mauris felis odio, mollis id lobortis at, tempor dictum sapien. Pellentesque sit amet est nec libero consectetur fermentum.</p>
+                </div>
+            </div>
+            <div id="element5" class="element" style="display:none;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="text" style="border: 1px solid blue;">
+                <p>Suspendisse potenti. Curabitur condimentum sagittis lorem et bibendum. Praesent consectetur orci nibh, sed convallis ipsum commodo in. Etiam odio nulla, maximus quis mi et, tempus bibendum purus. Vestibulum magna odio, mollis sit amet felis eget, cursus rhoncus dolor. Cras pretium dui vitae dolor ullamcorper pellentesque. Fusce pulvinar eros mauris, eget mattis orci consequat a. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vestibulum tellus tincidunt varius malesuada. Cras pharetra nulla vel arcu luctus, condimentum viverra magna imperdiet. Quisque eleifend ut massa ac volutpat. Sed varius eros a nulla lacinia, a pulvinar elit vehicula. Integer eu lectus imperdiet, eleifend nisl ut, sodales ante. Vivamus sollicitudin placerat ante, non lobortis sem cursus tincidunt.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        <script>
+            function show(elementID, elementNum) {
+    var ele = document.getElementById(elementID);
+    var group = document.getElementById(elementNum);
+    if (!ele) {
+        alert("no such element");
+        return;
+    }
+    var pages = document.getElementsByClassName('element');
+    for(var i = 0; i < pages.length; i++) {
+        pages[i].style.display = 'none';
+        var num = (i+1).toString();
+        document.getElementById(num).className = document.getElementById(num).className.replace( /(?:^|\s)active(?!\S)/g , '' );
+    }
+    ele.style.display = 'block';
+    group.className += ' active';
+}
+        </script>
+
+    <footer>
+      <div id="foot" style="border: 1px solid red;">
+        <div class="text" >
+           <h4 style="line-height: 8.5vh; margin-left: 50px; color: #000000;"> Copyright © Cameron Day 2016 </h4>
+        </div>
+      </div>
+    </footer>
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+       <script> 
+ $(".scroll").click(function(event){
+         event.preventDefault();
+         //calculate destination place
+         var dest=0;
+         if($(this.hash).offset().top > $(document).height()-$(window).height()){
+              dest=$(document).height()-$(window).height();
+         }else{
+              dest=$(this.hash).offset().top;
+         }
+         //go to destination
+         $('html,body').animate({scrollTop:dest}, 1000,'swing');
+     });
+    </script>
+
+    <script src="noframework.waypoints.min.js">
+        $(function () { // When the page has loaded,
+            $('#section-2').waypoint(function () {
+            alert("Waypoint reached.");
+            })
+        });
+    </script>
+
+  </body>
+</html>
