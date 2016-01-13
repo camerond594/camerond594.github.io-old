@@ -43,7 +43,7 @@ body {
 }
 
 #section-4 {
-	height: 100vh;
+	height: 90vh;
 	width: 100%;
 	background-color: #9D87DE;
 }
@@ -51,19 +51,28 @@ body {
 #section-3 {
 	height: 100vh;
 	width: 100%;
-	background-color: #7B61C9;
+	background: -webkit-linear-gradient(#7B61C9, #9D87DE); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#7B61C9, #9D87DE); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#7B61C9, #9D87DE); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#7B61C9, #9D87DE); /* Standard syntax */
 }
 
 #section-2 {
 	height: 100vh;
 	width: 100%;
-	background-color: #5F43B1;
+	background: -webkit-linear-gradient(#5F43B1, #7B61C9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5F43B1, #7B61C9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5F43B1, #7B61C9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5F43B1, #7B61C9); /* Standard syntax */
 }
 
 #section-1 {
 	height: 100vh;
 	width: 100%;
-	background-color: #4728A0;
+	background: -webkit-linear-gradient(#4728A0, #5F43B1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4728A0, #5F43B1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4728A0, #5F43B1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4728A0, #5F43B1); /* Standard syntax */
 }
 
 #foot {
